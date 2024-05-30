@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Use alternate box sizing model */
 html {
     box-sizing: border-box;
@@ -5,4 +7,43 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header,
+footer,
+.hero {
+    background-color: #1f2937;
+}
+
+.quotation {
+    background-color: #e5e7eb;
+}
+
+.signup-box,
+button {
+    background-color: #3883f6;
+}
+
+h1,
+h3,
+button,
+footer,
+.logo {
+    color: #f9faf8;
+}
+
+header,
+.hero,
+.signup {
+    color: #e5e7eb;
+}
+
+.info,
+.quotation {
+    color: #192f37;
 }
