@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 
 /* Use alternate box sizing model */
 html {
@@ -51,6 +51,8 @@ footer,
 
 h1 {
     font-size: 48px;
+    font-weight: 900;
+    margin: 0;
 }
 
 h2,
@@ -65,19 +67,18 @@ cite,
     font-weight: bold;
 }
 
-/* Always keep content 100px from the edges of the screen */
+/* Keep content from touching the edges of the screen */
 .section {
-    padding: 0 100px;
+    padding: 0 80px;
 }
 
 /* Center page content
  * Let it shrink dynamically
- * Restrict width to 1200px */
+ * Restrict its maximum width */
 .content {
     display: flex;
-    justify-content: center;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 /* Layout header items */
@@ -98,13 +99,91 @@ header a {
     text-decoration: none;
 }
 
-/* TODO: add rounded corners to button */
+.hero {
+    padding: 100px 0;
+    gap: 32px;
+}
+
+.hero p {
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.image {
+    height: 240px;
+    width: 500px;
+    background-color: grey;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 button {
     font-weight: bold;
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: none;
 }
 
 h2 {
     text-align: center;
+}
+
+.info-cards {
+    gap: 50px;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+
+.card {
+    width: min-content;
+    text-align: center;
+}
+
+.card-illustration {
+    height: 175px;
+    width: 175px;
+    border: 4px solid #3883f6;
+    border-radius: 8px;
+    margin: 8px auto;
+
+}
+
+.quotation {
+    padding: 80px 0;
+}
+
+.quotation blockquote {
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.quotation cite {
+    font-style: normal;
+    justify-content: flex-end;
+}
+
+.signup {
+    padding: 80px 0;
+}
+
+.signup-box {
+    border-radius: 8px;
+    padding: 32px 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.signup h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.signup-box button {
+    border: 1px solid #f9faf6;
 }
 
 footer {
