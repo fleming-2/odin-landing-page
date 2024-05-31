@@ -9,7 +9,8 @@ html {
     box-sizing: inherit;
 }
 
-body {
+body,
+button {
     margin: 0;
     font-family: "Roboto", sans-serif;
 	font-size: 18px;
@@ -64,16 +65,25 @@ cite,
     font-weight: bold;
 }
 
+/* Always keep content 100px from the edges of the screen */
+.section {
+    padding: 0 100px;
+}
+
 /* Center page content
  * Let it shrink dynamically
- * Always keep 100px from the edges of the screen
- * Limit width to 1200px
- */
+ * Restrict width to 1200px */
 .content {
     display: flex;
     justify-content: center;
-    margin: 0 100px;
+    margin: 0 auto;
     max-width: 1200px;
+}
+
+/* Layout header items */
+header.content {
+    justify-content: space-between;
+    align-items: center;
 }
 
 header ul {
@@ -86,6 +96,11 @@ header ul {
 header a {
     color: inherit;
     text-decoration: none;
+}
+
+/* TODO: add rounded corners to button */
+button {
+    font-weight: bold;
 }
 
 h2 {
